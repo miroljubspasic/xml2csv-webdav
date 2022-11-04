@@ -18,11 +18,6 @@ def main():
     customers_path = os.environ["CUSTOMERS_REMOTE"]
     customers_local = os.environ["CUSTOMERS_LOCAL"]
 
-    # print(url)
-    # print(auth)
-    # print(customers_path)
-    # print(customers_local)
-    # exit(1);
     client = Client(base_url=url, auth=auth)
     remoteCustomersList = client.ls(path=customers_path, detail=True)
 
